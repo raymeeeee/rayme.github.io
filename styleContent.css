@@ -1,0 +1,182 @@
+.main {
+  padding-top: 15vh;
+  overflow: hidden;
+  background-color: #F7AE48;
+}
+.main .box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 22px;
+  color: white;
+}
+.main .inbox1 {
+  color: white;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .text1 {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+.main .googlemap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .googlemap > iframe {
+  width: 100%;
+  height: 70vh;
+}
+.main .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.main .box {
+  flex-grow: 1;
+  flex-basis: 250px;
+}
+.main .box > img {
+  width: 100%;
+}
+.main .inbox2 {
+  color: white;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+.main .textBox1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .text3 {
+  color: white;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.main .img1 > img {
+  width: 100%;
+}
+.main a {
+  background: linear-gradient(90deg, #00a2cc 6%, #2530c4 100%);
+  background-clip: text;
+  color: transparent;
+  text-underline-offset: 8px;
+}
+.main .inst {
+  background: linear-gradient(90deg, #df7511 6%, #e4189d 100%);
+  background-clip: text;
+}
+.main a::selection {
+  color: white;
+}
+.main .buttonAnchor {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 94%;
+  left: 91%;
+  z-index: 100;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+.main .box2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .item2 {
+  position: absolute;
+  font-family: cursive;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+.main .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+.main .items .item1 > img,
+.main .items .item3 > img {
+  width: 380px;
+  height: 400px;
+}
+@media screen and (min-width: 1000px) {
+  .main .box2:hover .item1 {
+    transition-duration: 1s;
+    transform: translateX(-99%);
+  }
+  .main .box2:hover .item3 {
+    transition-duration: 1s;
+    transform: translateX(99%);
+  }
+  .main .box2:not(hover) .item1 {
+    transition-duration: 1s;
+    transform: translateX(0);
+  }
+  .main .box2:not(hover) .item3 {
+    transition-duration: 1s;
+    transform: translateX();
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .items {
+    flex-direction: column;
+  }
+  .main .box2:hover .item1 {
+    transition-duration: 1s;
+    opacity: 0;
+  }
+  .main .box2:hover .item3 {
+    transition-duration: 1s;
+    opacity: 0;
+  }
+  .main .box2:not(hover) .item1 {
+    transition-duration: 1s;
+    opacity: 1;
+  }
+  .main .box2:not(hover) .item3 {
+    transition-duration: 1s;
+    opacity: 1;
+  }
+}
+.line {
+  display: flex;
+  height: 15vh;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F7BE48;
+  background-image: url(pngs/line.png);
+  background-size: 120px;
+  background-position: center;
+  background-repeat: repeat;
+}

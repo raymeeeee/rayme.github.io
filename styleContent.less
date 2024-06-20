@@ -1,0 +1,230 @@
+@font_family: cursive;
+
+// div {
+//     border: 1px solid black;
+// }
+
+
+
+
+.main {
+    padding-top: 15vh;
+    overflow: hidden;
+
+    background-color: #F7AE48;
+    .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: @font_family;
+        font-size: 22px;
+        color: white;
+    }
+
+    //
+    .inbox1 {
+        color: white;
+        font-family: @font_family;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text1 {
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+    }
+   .googlemap {
+        width: 100%;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+   }
+   .googlemap > iframe {
+        width: 100%;
+        height: 70vh;
+    }
+   
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        
+    }
+    .box {
+        flex-grow: 1;
+        flex-basis: 250px;
+    }
+    .box > img {
+       width: 100%;
+    }
+
+    .inbox2 {
+        color: white;
+        font-family: @font_family;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+    }
+    //
+
+    .textBox1 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text3 {
+        color: white;
+        font-family: @font_family;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;  
+    }
+    .img1 > img {
+        width: 100%;
+    }
+    a {
+        
+        background: linear-gradient(90deg, rgba(0,162,204,1) 6%, rgba(37,48,196,1) 100%);
+        background-clip: text;
+        color: transparent;
+        text-underline-offset: 8px;
+       
+    }
+    .inst {
+        background: linear-gradient(90deg, rgb(223, 117, 17) 6%, rgb(228, 24, 157) 100%);
+        background-clip: text;
+    }
+    a::selection {
+        color: white;
+    }
+
+    .buttonAnchor {
+        position: fixed;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        top: 94%;
+        left: 91%;
+
+        z-index: 100;
+
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .box2 {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .item2 {
+        position: absolute;
+        font-family: @font_family;
+        font-size: 22px;
+        color: white;
+        text-align: center;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        .item1 > img, .item3 > img {
+           width: 380px;
+           height: 400px;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .box2:hover {
+            .item1 {
+                transition-duration: 1s;
+                transform: translateX(-99%);
+            }
+            .item3 {
+                transition-duration: 1s;
+                transform: translateX(99%);
+            }
+        }
+        .box2:not(hover) {
+            .item1 {
+                transition-duration: 1s;
+                transform: translateX(0);
+            }
+            .item3 {
+                transition-duration: 1s;
+                transform: translateX();
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .items {
+            flex-direction: column;
+        }
+        .box2:hover {
+            .item1 {
+                transition-duration: 1s;
+                opacity: 0;
+            }
+            .item3 {
+                transition-duration: 1s;
+                opacity: 0;
+            }
+        }
+        .box2:not(hover) {
+            .item1 {
+                transition-duration: 1s;
+                opacity: 1;
+            }
+            .item3 {
+                transition-duration: 1s;
+                opacity: 1;
+            }
+        }
+    }
+    
+
+}
+
+
+
+.line {
+    display: flex;
+
+    height: 15vh;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #F7BE48;
+    background-image: url(./pngs/line.png);
+    
+    background-size: 120px;
+    background-position: center;
+    background-repeat: repeat;
+
+}

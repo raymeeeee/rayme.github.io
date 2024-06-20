@@ -1,0 +1,135 @@
+.container-fluid {
+  z-index: 1;
+  background-color: #F7AE48;
+  border: none;
+  padding-top: 15vh;
+  font-family: cursive;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid .box {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  color: white;
+  width: 70%;
+  height: 100%;
+  padding: 3%;
+}
+.container-fluid .box h2 {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 40px;
+  position: absolute;
+}
+@media screen and (max-width: 992px) {
+  .container-fluid .box h2 {
+    font-size: 20px;
+  }
+}
+.container-fluid .box textarea {
+  resize: none;
+}
+.container-fluid .box .row_box {
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  padding: 1%;
+}
+.container-fluid .box .button_submit > button {
+  padding: 6px;
+  width: 100px;
+  background-color: #ff8c00;
+  border-radius: 12px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.container-fluid .box .button_submit > button:active {
+  transition-duration: 0.2s;
+  background-color: #c0320f;
+  width: 80px;
+}
+.container-fluid .box .button_submit > button:not(active) {
+  transition-duration: 0.2s;
+}
+.container-fluid form {
+  width: 100%;
+}
+.container-fluid form > .row_box {
+  opacity: 0;
+}
+.container-fluid .box:hover {
+  transition-duration: 0.6s;
+  background-color: #F7AE48;
+}
+.container-fluid .box:hover h2 {
+  transition-duration: 0.3s;
+  transform: translateY(-33vh);
+}
+.container-fluid .box:hover form > .row_box {
+  transition-duration: 1s;
+  opacity: 1;
+}
+.container-fluid .box:not(hover) {
+  transition-duration: 0.6s;
+}
+.container-fluid .box:not(hover) h2 {
+  transition-duration: 0.3s;
+  transform: translateY(0);
+}
+.container-fluid input {
+  width: 220px;
+  background-color: yellow;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  padding: 1%;
+  border-bottom: 2px solid black;
+}
+.container-fluid textarea {
+  background-color: yellow;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  padding: 1%;
+  border-bottom: 2px solid black;
+  height: 200px;
+  margin-bottom: 10px;
+  outline: none;
+}
+.container-fluid input[type=text]:focus,
+.container-fluid input[type=email]:focus {
+  transition-duration: 1s;
+  width: 250px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+.container-fluid input[type=text]:not(focus),
+.container-fluid input[type=email]:not(focus) {
+  transition-duration: 1s;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.bg {
+  padding-top: 15vh;
+  height: 100%;
+  width: 100%;
+  border: none;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  opacity: 0.5;
+}
+.bg img {
+  width: 20%;
+  height: 20%;
+}

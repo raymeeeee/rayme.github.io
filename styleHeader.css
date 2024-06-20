@@ -1,0 +1,63 @@
+::selection {
+  background-color: red;
+}
+.header {
+  z-index: 1000;
+  border: none;
+  height: 15vh;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #A57953;
+}
+.header .icon {
+  margin-left: 2%;
+}
+.header .icon > img {
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+  padding: 2%;
+}
+.header .icon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-family: cursive;
+}
+.header .buttons_header {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+.header .buttons_header > button {
+  height: 15vh;
+  width: 25%;
+  border: none;
+  background-color: #A84842;
+  color: white;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.header .buttons_header > button a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-family: cursive;
+}
+.header .buttons_header > button:hover {
+  transition-duration: 0.23s;
+  background-color: #294B7D;
+}
+.header .buttons_header > button:not(hover) {
+  transition-duration: 0.23s;
+}
+.header .buttons_header > button:not(hover) a {
+  color: white;
+}

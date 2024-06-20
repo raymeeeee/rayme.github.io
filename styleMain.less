@@ -1,0 +1,161 @@
+@test_border: none;
+@font_family: cursive;
+
+// div {
+//     border: 1px solid black;
+// }
+
+.main {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+}
+
+.content_box1 {
+
+    border: @test_border;
+    padding: 10% 2%;
+    display: flex;
+    
+    
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+
+    background-color: #F7AE48;
+
+    .text1 {
+       width: 300px;
+      
+    }
+
+    .photo1 {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo1 > img {
+
+        border: @test_border;
+        
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+
+    }
+
+    .photo1:hover {
+        img {
+            transition-duration: 0.6s;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .photo1:not(hover) {
+        img {
+            transition-duration: 0.6s;
+            
+        }
+    }
+
+}
+
+.text1, .text2 {
+
+    border: @test_border;
+
+    font-family: @font_family;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.content_box2 {
+
+    border: @test_border;
+    padding: 10% 2%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: #F7AE48;
+
+    .text2 { 
+        width: 300px;
+      
+    }
+
+    .photo2 {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo2 > img {
+
+        border: @test_border;
+        
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+
+    }
+
+    .photo2:hover {
+        img {
+            transition-duration: 0.6s;
+            width: 400px;
+            height: 400px;
+        }
+    }
+    .photo2:not(hover) {
+
+        img {
+            transition-duration: 0.6s;
+        }
+
+    }
+
+}
+
+.line {
+    display: flex;
+
+    height: 15vh;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #F7BE48;
+    background-image: url(./pngs/line.png);
+    
+    background-size: 120px;
+    background-position: center;
+    background-repeat: repeat;
+
+}
+
+@media screen and (max-width: 768px) {
+    .content_box1, .content_box2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .photo1, .photo2 {
+        width: 100%;
+    }
+    .photo1 > img {
+
+        border: @test_border;
+        
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+
+    }
+}
