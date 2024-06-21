@@ -130,7 +130,7 @@
   width: 380px;
   height: 400px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 769px) {
   .main .box2:hover .item1 {
     transition-duration: 1s;
     transform: translateX(-99%);
